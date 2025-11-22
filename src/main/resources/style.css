@@ -1,0 +1,151 @@
+/* style.css - Aydınlık Mod (Yan Menü Koyu, İçerik Açık) */
+
+.root {
+    -fx-font-family: "Segoe UI", "Roboto", sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #f2f6f9; /* İçerik Zemini: Açık Gri */
+}
+
+/* --- Yan Menü (SABİT KOYU RENK) --- */
+.side-drawer {
+    -fx-background-color: #2c3e50; /* Klasik Koyu Lacivert */
+    -fx-min-width: 240px; /* Genişliği Sabitle (Küçülmeyi Önler) */
+    -fx-pref-width: 240px;
+    -fx-max-width: 240px;
+}
+
+/* Logo Yazısı (Merite) */
+.brand-label {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+/* Menü Butonları */
+/* Yan menü item'ları – Aydınlık modda da NET görünsün */
+.menu-item {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ecf0f1;      /* Daha parlak, tam okunur */
+    -fx-padding: 12 20;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER-LEFT;
+    -fx-font-weight: normal;
+    -fx-font-size: 14px;
+}
+
+/* Hover: hafif koyulaşsın */
+.menu-item:hover {
+    -fx-background-color: rgba(255,255,255,0.10);
+    -fx-text-fill: #ffffff;
+}
+
+/* Seçili: yeşil arka plan + beyaz yazı */
+.menu-item:selected {
+    -fx-background-color: #1abc9c;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-border-width: 0 0 0 4;
+    -fx-border-color: #ecf0f1;
+}
+
+/* --- İçerik Alanları --- */
+.content-background {
+    -fx-background-color: #f2f6f9;
+}
+.card-pane {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 5, 0, 0, 1);
+}
+
+/* --- Yazılar (İçerikteki) --- */
+.label { -fx-text-fill: #2c3e50; } /* Başlıklar Koyu */
+.header-title { -fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2c3e50; }
+
+/* --- Tablolar --- */
+.table-view { -fx-background-color: transparent; }
+.table-view .column-header-background { -fx-background-color: white; -fx-border-width: 0 0 2 0; -fx-border-color: #ecf0f1; }
+.table-view .column-header .label { -fx-text-fill: #7f8c8d; -fx-font-weight: bold; }
+.table-row-cell { -fx-background-color: white; -fx-border-color: transparent; -fx-border-width: 0 0 1 0; -fx-border-color: #f0f0f0; }
+.table-row-cell:selected { -fx-background-color: #e3f2fd; }
+.table-cell { -fx-text-fill: #2c3e50; }
+
+/* --- Butonlar --- */
+.button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+}
+.button:hover { -fx-background-color: #2980b9; }
+.delete-button { -fx-background-color: #e74c3c; }
+.delete-button:hover { -fx-background-color: #c0392b; }
+/* Kronometre büyük süre yazısı - Aydınlık mod */
+.timer-label {
+    -fx-font-size: 64px;
+    -fx-font-family: "Consolas", "Monospaced";
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+/* Aydınlık modda yan menüyü koyu yap */
+.side-drawer {
+    -fx-background-color: #1e293b;  /* koyu lacivert */
+    -fx-border-color: #334155;
+    -fx-border-width: 0 1 0 0;
+}
+
+.menu-item {
+    -fx-text-fill: #cbd5e1;
+}
+
+.menu-item:selected {
+    -fx-background-color: #14b8a6; /* senin yeşil */
+    -fx-text-fill: #0f172a;
+}
+/* === YAN MENÜ - MAVİ KUTU STİLİ (ESKİ GÖRÜNÜM GİBİ) === */
+
+/* Yan bar arkaplanı */
+.side-drawer {
+    -fx-background-color: #2c3e50;   /* koyu lacivert */
+    -fx-min-width: 240px;
+    -fx-pref-width: 240px;
+    -fx-max-width: 240px;
+}
+
+/* Tüm menü butonları: FULL mavi kutu, opacity 1 */
+.menu-item {
+    -fx-background-color: #3498db;   /* mavi kutu */
+    -fx-text-fill: #ecf0f1;          /* açık gri / beyaz yazı */
+    -fx-padding: 10 18;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER-LEFT;
+    -fx-opacity: 1.0;                /* bulanıklığı/solukluğu öldür */
+}
+
+/* İçindeki ikon + text label aynı rengi alsın */
+.side-drawer .menu-item .label {
+    -fx-text-fill: inherit;
+    -fx-opacity: 1.0;
+}
+
+/* Üzerine gelince biraz koyulaşsın */
+.menu-item:hover {
+    -fx-background-color: #2980b9;
+}
+
+/* Seçili olan: videodaki gibi daha koyu kutu */
+.menu-item:selected {
+    -fx-background-color: #1f2937;   /* koyu gri/mavi */
+    -fx-text-fill: #ffffff;
+}
+
+/* Seçili item içindeki label'lar da beyaz olsun */
+.menu-item:selected .label {
+    -fx-text-fill: #ffffff;
+}
+
