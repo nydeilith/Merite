@@ -1,0 +1,127 @@
+📌 Merite – Task & Reward Tracking Application
+
+Merite is a modern JavaFX-based productivity app that helps you manage your daily tasks, set goals, earn points, and redeem rewards.
+It’s designed to keep you motivated and provide a clean, enjoyable experience.
+
+🚀 Features
+✔ Task Management
+
+Add / edit / delete tasks
+
+Assign points and difficulty
+
+Automatic point calculation on completion
+
+✔ Goal Tracking
+
+Daily and weekly goals
+
+Progress monitoring
+
+Motivation through consistency
+
+✔ Reward Store
+
+Spend earned points on custom rewards
+
+Track reward history
+
+Gamified progression system
+
+✔ Reporting & Analytics
+
+Completed task stats
+
+Points earned / spent / remaining
+
+Productivity insights
+
+✔ UI & Experience
+
+Modern JavaFX interface
+
+Custom CSS themes
+
+Sound effects (UI actions, confirmations, rewards)
+
+Icon + splash screen support
+
+🖥 Windows Portable Version (No Java Required)
+
+Merite provides a portable Windows build that includes a bundled JRE.
+No installation and no Java setup required.
+
+👉 Download the latest portable release:
+https://github.com/nydeilith/Merite/releases/latest
+
+How to use:
+
+Download the ZIP file
+
+Extract it
+
+Double-click Merite.exe
+
+Enjoy — Java is embedded and not required on your system
+
+⚠ Note:
+Windows may show a SmartScreen warning because the app is unsigned (normal for new EXE files).
+Click:
+More Info → Run Anyway
+
+🧩 Project Structure
+Merite/
+ ├── src/
+ │   ├── main/java/com/gorevtakip/
+ │   │       AnaUygulama.java
+ │   │       Gorev.java
+ │   │       ...
+ │   ├── main/resources/
+ │   │       dark.css
+ │   │       style.css
+ │   │       images/
+ │   │       sounds/
+ ├── pom.xml
+
+🛠 Build Instructions (For Developers)
+Requirements
+
+Java 17
+
+Apache Maven 3.8+
+
+Build
+mvn clean package
+
+
+The output JAR will appear in:
+
+target/GorevTakipUygulamasi-1.0-SNAPSHOT.jar
+
+Run (Dev Mode)
+mvn javafx:run
+
+📦 Creating the Windows Portable Build
+
+Merite’s portable build was created using jpackage and Launch4j.
+
+Example jpackage command:
+
+jpackage \
+ --name Merite \
+ --input ./MeriteBuild \
+ --main-jar GorevTakipUygulaması-1.0-SNAPSHOT.jar \
+ --type exe \
+ --icon merite.ico \
+ --win-menu \
+ --win-shortcut \
+ --java-options "--add-modules=javafx.controls,javafx.fxml"
+
+📄 License
+
+This project is open source.
+You may fork, modify, and adapt it freely.
+
+💬 Contact
+
+GitHub: https://github.com/nydeilith

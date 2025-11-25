@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Merite
+Comment=Kişisel Gelişim RPG Uygulaması
+# Aşağıdaki satır JAR dosyasını çalıştırır.
+Exec=java -jar /home/kerem/GorevTakipUygulamasi/target/GorevTakipUygulamasi-1.0-SNAPSHOT.jar
+# Aşağıdaki satır ikonun yerini gösterir.
+Icon=/home/kerem/GorevTakipUygulamasi/src/main/resources/images/app_icon.jpg
+Terminal=false
+Categories=Office;Utility;Java;
+StartupWMClass=com.gorevtakip.AnaUygulama
