@@ -102,5 +102,3 @@ This project is open source and available under the MIT License.
 Developed by Kerem Yiğit Elbasan
 
 GitHub: nydeilith
-
-LinkedIn: Kerem Yiğit Elbasan
